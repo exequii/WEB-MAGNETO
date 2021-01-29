@@ -6,6 +6,17 @@
     <title>Alquiler Magneto La Plata</title>
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/nivo-slider.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/micss.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="js/jquery.nivo.slider.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $('#sliderHome').nivoSlider();
+        });
+    </script>
     
 </head>
 
@@ -29,27 +40,27 @@
     <main>
 
         <!-- IMAGEN SLIDER -->
-        <section class="imagen">
-            <!--<img src="img/izquierda.png" class="flechas">-->
-                <article class="slider-wrapper theme-default">
+        <section class="contenedor">
+            <article class="slider-wrapper theme-default">
                 
-                    <div id="sliderHome" class="nivoSlider">
+                <div id="sliderHome" class="nivoSlider"> 
             
-                        <img src="img/slider1.jpg" class="central" alt="">
-                        <img src="img/slider2.jpg" class="central" alt="" data-transition="slideInLeft">
-                        <img src="" class="central" alt="">
+                    <img src="img/slider1.jpg" alt="">
+                    <img src="img/slider3.jpg" alt="">
+                        
 
-                    </div>
-                </article>
+                </div>
+            </article>
+    
+        </section>
 
+        <div id="prueba"></div>
 
-        </section id="pasos">
-
-        <section>
+        <section id="pasos">
 
             <div>
 
-                <img src="">
+                <img src="img/01.png">
                 <h3>01. Contactanos por Whatsapp o Mail.</h3>
                 <p>Necesitaremos que nos envies una foto de tu dni y una factura de un servicio.</p>
 
@@ -57,7 +68,7 @@
             
             <div>
 
-                <img src="">
+                <img src="img/02.png">
                 <h3>02. Elegi periodo y Equipo a Alquilar. </h3>
                 <p>Indica el periodo de alquiler y el equipo que buscas al vendedor. Si no sabes, te ayudamos!</p>
 
@@ -65,7 +76,7 @@
 
             <div>
 
-                <img src="">
+                <img src="img/03.png">
                 <h3>03. Retira o recibi tu equipo.</h3>
                 <p>Coordinamos para que recibas el equipo en tu domicilio o lo retires por nuestra sucursal.</p>
 
@@ -89,6 +100,16 @@
 
 
     </footer>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay:true
+            });
+        });
+        
+    </script>
     
 </body>
 </html>
