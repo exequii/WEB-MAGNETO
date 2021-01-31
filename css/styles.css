@@ -11,7 +11,7 @@ header{
     justify-content: space-around;
     height: 65px;
 
-    margin-bottom: 1%;
+    
 }
 
 nav{
@@ -39,11 +39,16 @@ li a:hover{
 
 /*SECCION SLIDER*************************************************************************************************************/
 
+#contenedor-slider{
+    margin-top: 1%;
+    
+}
+
 
 /* SECCION PASOS*************************************************************************************************************/
 
 #pasos{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.363);
     display: flex;
     justify-content: space-around;
 }
@@ -71,4 +76,24 @@ li a:hover{
 
 #prueba:hover {
     width:500px;
+  }
+
+  /* SECCION ARTICULOS PUBLICADOS ********************************************************************************/
+
+  #articulos{
+      margin-top: 2%;
+  }
+
+  #articulos h3{
+      text-align: center;
+  }
+
+  #articulos1{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #articulos img{
+      width: 20%;
+      border: black 1px solid;
   }
