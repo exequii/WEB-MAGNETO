@@ -6,16 +6,18 @@
 /*SECCION HEADER***************************************************************************************************************/
 
 header{
-    background-color: grey;
-    display:flex;
+    /*background-color: grey;*/
+    display: flex;
+    z-index: 3;
     justify-content: space-around;
     height: 65px;
+    background-color: rgba(128, 128, 128, 0.267)
 
     
 }
 
 nav{
-    width: 100%;
+    width: 80%;
 }
 
 ul{
@@ -29,7 +31,8 @@ ul{
 
 li a{
     text-decoration: none;
-    color: white;
+    color: black;
+    transition: all ease 0.1s;
 }
 
 li a:hover{
@@ -40,9 +43,55 @@ li a:hover{
 /*SECCION SLIDER*************************************************************************************************************/
 
 #contenedor-slider{
-    margin-top: 1%;
+    position: relative;
+    width: 100%;
+    height: calc(75vh - 50px);
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all 3s ease-in-out;
+    background-image: url(../img/slider1.jpg);
+    animation: banner 28s infinite ease-in-out;
+    
     
 }
+
+@keyframes banner{
+    0%{
+        background-image: url(../img/slider1.jpg);
+        
+    }
+
+    25%{
+        background-image: url(../img/slider1.jpg);
+    }
+
+    26%{
+        background-image: url(../img/slider2.jpg);
+    }
+
+    50%{
+        background-image: url(../img/slider2.jpg);
+    }
+
+    51%{
+        background-image: url(../img/slider1.jpg);
+    }
+
+    75%{
+        background-image: url(../img/slider1.jpg);
+    }
+
+    76%{
+        background-image: url(../img/slider2.jpg);
+    }
+
+    100%{
+        background-image: url(../img/slider2.jpg);
+    }
+}
+
+
 
 
 /* SECCION PASOS*************************************************************************************************************/
@@ -95,5 +144,6 @@ li a:hover{
 
   #articulos img{
       width: 20%;
-      border: black 1px solid;
+      margin:50px;
+      box-shadow: 5px 5px 15px #999;
   }
