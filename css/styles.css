@@ -5,19 +5,8 @@
 
 /*SECCION HEADER***************************************************************************************************************/
 
-header{
-    /*background-color: grey;*/
-    display: flex;
-    z-index: 3;
-    justify-content: space-around;
-    height: 65px;
-    background-color: rgba(128, 128, 128, 0.267)
-
-    
-}
-
 nav{
-    width: 80%;
+    width: 90%;
 }
 
 ul{
@@ -33,15 +22,40 @@ li a{
     text-decoration: none;
     color: black;
     transition: all ease 0.1s;
+    font-family: 'Sora', sans-serif;
 }
 
 li a:hover{
-    
     border-bottom: 2px rgb(39, 167, 218) solid;
 }
 
-/*SECCION SLIDER*************************************************************************************************************/
+#logo{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.267); 
+}
 
+#logo a img{
+    width: 100%;
+}
+#logo a{
+    height: 50px;
+    width: 50px;
+}
+
+/*SECCION SLIDER*************************************************************************************************************/
+.nivo-controlNav{
+    display: none;
+}
+
+#sliderHome{
+    height: 600px;
+}
+
+/*
 #contenedor-slider{
     position: relative;
     width: 100%;
@@ -49,25 +63,34 @@ li a:hover{
     background-color: #F5F5F5;
     background-size: cover;
     background-position: center;
-    transition: all 3s ease-in-out;
-    background-image: url(../img/slider1.jpg);
-    animation: banner 28s infinite ease-in-out;
-    
-    
-}
 
+    transition: opacity 0.5s;
+    
+    background-image: url(../img/slider1.jpg);
+    
+
+    animation: banner 28s infinite ease-in-out;
+    -moz-animation: banner 28s infinite ease-in-out;
+    -ms-animation: banner 28s infinite ease-in-out;
+    -o-animation: banner 28s infinite ease-in-out;
+    -webkit-animation: banner 28s infinite ease-in-out; 
+}
+*/
+
+/*
 @keyframes banner{
     0%{
         background-image: url(../img/slider1.jpg);
-        
     }
 
     25%{
         background-image: url(../img/slider1.jpg);
+
     }
 
     26%{
         background-image: url(../img/slider2.jpg);
+        
     }
 
     50%{
@@ -90,13 +113,14 @@ li a:hover{
         background-image: url(../img/slider2.jpg);
     }
 }
-
+*/
 
 
 
 /* SECCION PASOS*************************************************************************************************************/
 
 #pasos{
+    margin-top: 1%;
     background-color: rgba(128, 128, 128, 0.363);
     display: flex;
     justify-content: space-around;
@@ -110,7 +134,11 @@ li a:hover{
     text-align: center;
 }
 #pasos img{
+    margin: 5%;
     width: 50%;
+}
+#pasos p{
+    margin-bottom: 5%;
 }
 
 /* SECCION PRUEBA DEL CUBIC BEZIER********************************************************************************************/
@@ -140,10 +168,22 @@ li a:hover{
   #articulos1{
       display: flex;
       justify-content: space-between;
+      margin: 40px;
   }
 
   #articulos img{
-      width: 20%;
-      margin:50px;
+      width: 70%;
       box-shadow: 5px 5px 15px #999;
+      transition: all .2s;
+  }
+
+  #articulos img:hover{
+      transform: scale(1.2);
+  }
+  
+  #articulos1 article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
