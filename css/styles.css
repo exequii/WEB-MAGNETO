@@ -21,13 +21,32 @@ ul{
 li a{
     text-decoration: none;
     color: black;
-    transition: all ease 0.1s;
     font-family: 'Sora', sans-serif;
+    position: relative;
+    line-height: 4;
+    margin: 1.5em;
 }
 
-li a:hover{
+li a:before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: black;
+        position: absolute;
+        left:0;
+        bottom:0;
+        transition: all .3s;
+}
+
+li a:hover:before{
+    width: 100%;
+}
+
+/*li a:hover{
     border-bottom: 2px rgb(39, 167, 218) solid;
 }
+*/
 
 #logo{
     display: flex;
